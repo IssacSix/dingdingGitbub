@@ -1,0 +1,33 @@
+@media only screen and (min-device-aspect-ratio: 1.5) {
+}
+@media only screen and (min-device-aspect-ratio: 2) {
+}
+body {
+  font-size: 20px;
+}
+.border-raduis {
+  width: 200px;
+  height: 30px;
+  margin-top: 200px/2;
+  border: 1px solid #f00;
+}
+.shopScores {
+  width: 300px;
+  margin-top: 50px;
+  border-top: 1px solid #008000;
+}
+li a {
+  display: block;
+  color: #00f;
+  padding: 5px;
+}
+html.ie li a {
+  padding: 6px;
+}
+li a:hover {
+  color: #f00;
+}
+.position {
+  z-index: 1;
+  position: relative;
+}
