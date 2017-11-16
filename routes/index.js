@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
+var Movie = require('../db/models/movies')
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+exports.list = function (req, res, next) {
 
-module.exports = router;
+  Movie.findAll(function (err, movie) {
+    res.render('index', {
+      title: 'movies 首页',
+      movies: movie
+    })
+  })
+  
+};
+
